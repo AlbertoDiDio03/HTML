@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang = "it"> <!-- lingua -->
+	<head>
+		<style type = "text/css"> 
+			#titolo1 
+			{
+				font-size : 40px;
+				font-style: normal; 
+				font-family: Verdana;
+				text-align: center;
+				color : #0095b6;
+				background-color: #cfe1ff;
+				text-decoration: none;
+				border-style: solid;
+				border-color: transparent;
+			}
+			#sottotitolo1
+			{
+				font-size: 20px;
+				font-style: italic;
+				font-family: Times;
+				color: red;
+				background-color: yellow;
+				border: 1px;
+				width: 16%;
+			}
+			#titolo2
+			{
+				font-size : 40px;
+				font-style: normal;
+				font-family: Verdana;
+				text-align: center;
+				color : #735700 ;
+				background-color: #978900;
+				text-decoration: none;
+				border-style: solid;
+				border-color: transparent;
+			}
+			#sottotitolo2
+			{
+				font-size: 20px;
+				font-style: italic;
+				font-family: Times;
+				color: #0a4000;
+				background-color: #0ca000;
+				border: 1px;
+				width: 16%;
+			}
+			#tabella
+			{
+				width: 70%;
+				border: 2px solid black;
+				border-collapse: collapse;
+				text-align: center; 
+				background-color: #e6ffe6;
+			}
+			td, th 
+			{
+				border:2px solid black;
+				padding:4px;
+			}
+			caption
+			{
+				color : red;
+				text-transform:uppercase;
+			}
+			th:first-child, td:first-child 
+			{
+				font-style: italic;
+				font-family: Arial;
+				text-decoration: underline;
+				font-weight: bold;
+			}
+			th
+			{
+				font-style: italic;
+				font-family: Arial;
+				font-weight: bold;
+			}
+			td:nth-child(3)
+			{
+				background-color: yellow;
+			}
+			td:nth-child(4)
+			{
+				background-color: green;
+			}
+			td:last-child
+			{
+				background-color: red;
+			}
+			#totale
+			{
+				font-style: normal;
+				text-decoration: none;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			#link
+			{
+				position: absolute;
+				right: 17%;
+			}
+		</style> 
+	</head>
+	<body bgcolor = "#caffae">
+		<h1 id = "titolo1" > La mia vacanza </h1> <!-- titolo vacanza -->
+		<p id = "sottotitolo1" > Andalusia, estate 2019 </p> <!-- posto vacanza -->
+		<p style = "text-align: justify"> <!-- paragrafo vacanza -->
+			<img src = "Panoramic_Malaga.jpg", width = "40%", height = "275", align = "right", hspace = "120">
+			La scorsa estate ho fatto una vacanza di dieci giorni in Spagna, girando l'Andalusia. 
+			Siamo atterrati all'aeroporto di Malaga per poi andare a ritirare l'auto a noleggio, con cui 
+			abbiamo girato tutta la regione. Il fatto di dover percorrere così tanti chilometri 
+			nonostante fossi in vacanza non mi ha entusiasmato troppo, ma grazie ai luoghi che ho visto 
+			me lo sono in parte scordato. Ecco alcuni <u> posti che ho visitato</u>: 
+		</p>
+		<ol type = "I">  <!-- posti visitati -->
+			<li> Malaga </li>
+			<li> Siviglia</li>
+			<li> Granada </li>
+		</ol>
+		<p>
+			Invece <u> alcune attività che ho svolto</u>, a differenza di come si fa in Italia sono state:
+		</p>
+		<ol type = "a"> <!-- attività svolte -->
+			<li> mangiare prosciutto tagliato col coltello </li>
+			<li> andare su piattaforme confiabili galleggianti </li>
+			<li> scoprire che gli spagnoli si accontentano di mangiare cibo scadente </li>
+		</ol>
+		<br><br>
+		<h1 id = "titolo2" > Il mio hobby </h1> <!-- titolo hobby -->
+		<p id = "sottotitolo2" > Cicloturismo </p> <!-- attività hobby -->
+		<p style = "text-align: justify"> <!-- paragrafo hobby -->
+			<img src = "ciclabilemincio.jpg", width = "40%", height = "275",  align = "right", hspace = "120">
+			Mi piace molto andare a girare in bici, <u>mi rilassa</u> soprattutto stare in campagna o in posti lontani dalla città. Anche quando sono in vacanza ho bisogno di prendermi un po' di tempo per me e usare la mia bicicletta. Questa foto l'ho scattata durante il percorso ciclabile che porta <u>da Mantova a Peschiera del Garda</u>.
+		</p>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<table id="tabella", align="center">
+			<caption> <!-- titolo tabella -->
+				<p><b> Casi coronavirus Emilia-Romagna (13.03.20)</b></p>
+			</caption>
+			<thead> <!-- titoli colonne -->
+				<tr> <th>Regione</th> <th> Casi</th> <th>Malati</th> <th>Guariti</th> <th>Deceduti</th> </tr>
+			</thead>
+			<tbody> <!-- dati tabella -->
+				<tr> <td>Lombardia</td>				<td>9820</td> <td>7732</td>	<td>1198</td> <td>890</td> </tr>
+				<tr> <td>Emilia Romagna</td>		<td>2263</td> <td>2011</td>	<td>51</td>	  <td>201</td> </tr>
+				<tr> <td>Veneto</td>				<td>1595</td> <td>1453</td>	<td>100</td>  <td>42</td>  </tr>
+				<tr> <td>Piemonte</td>				<td>840</td>  <td>794</td>	<td>0</td>	  <td>46</td>  </tr>
+				<tr> <td>Marche</td>				<td>725</td>  <td>698</td>	<td>0</td>	  <td>27</td>  </tr>
+				<tr> <td>Toscana</td>				<td>470</td>  <td>455</td>	<td>10</td>	  <td>5</td>   </tr>
+				<tr> <td>Liguria</td>				<td>345</td>  <td>304</td>	<td>24</td>	  <td>17</td>  </tr>
+				<tr> <td>Trentino-Alto Adige</td>	<td>288</td>  <td>280</td>	<td>4</td>	  <td>4</td>   </tr>
+				<tr> <td>Lazio</td>					<td>277</td>  <td>242</td>	<td>24</td>	  <td>11</td>  </tr>
+				<tr> <td>Friuli Venezia Giulia</td>	<td>257</td>  <td>236</td>	<td>11</td>	  <td>10</td>  </tr>
+				<tr> <td>Campania</td>				<td>220</td>  <td>213</td>	<td>5</td>	  <td>2</td>   </tr>
+				<tr> <td>Sicilia</td>				<td>130</td>  <td>126</td>	<td>2</td>	  <td>2</td>   </tr>
+				<tr> <td>Puglia</td>				<td>129</td>  <td>121</td>	<td>3</td>	  <td>5</td>   </tr>
+				<tr> <td>Abruzzo</td>				<td>89</td>   <td>83</td>	<td>4</td>	  <td>2</td>   </tr>
+				<tr> <td>Umbria</td>				<td>76</td>   <td>73</td>	<td>2</td>	  <td>1</td>   </tr>
+				<tr> <td>Sardegna</td>				<td>43</td>   <td>43</td>	<td>0</td>	  <td>0</td>   </tr>
+				<tr> <td>Calabria</td>				<td>38</td>   <td>37</td>	<td>1</td>	  <td>0</td>   </tr>
+				<tr> <td>Valle d'Aosta</td>			<td>28</td>   <td>27</td>	<td>0</td>	  <td>1</td>   </tr>
+				<tr> <td>Molise</td>				<td>17</td>   <td>17</td>	<td>0</td>	  <td>0</td>   </tr>
+				<tr> <td>Basilicata</td>			<td>10</td>   <td>10</td>	<td>0</td>	  <td>0</td>   </tr>
+			</tbody>
+			<tfoot> <!-- totali -->
+				<tr id="totale"> <td style = "text-decoration: none;">Totale</td> <td>17660</td> <td>14955</td>   <td>1439</td> <td>1266</td> </tr>
+			</tfoot>
+		</table>
+		<p id="link"> <!-- link info -->
+		La fonte usata per le informazioni è:
+		<a href="https://www.corriere.it/salute/20_marzo_13/coronavirus-italia-17660-casi-1266-morti-bollettino-13-marzo-15b1622c-654a-11ea-86da-7c7313c791fe.shtml">
+		Corriere della Sera
+		</a>
+		</p>
+		<br><br>
+		<br><br>
+	</body>
+</html>
