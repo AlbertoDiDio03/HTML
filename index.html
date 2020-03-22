@@ -1,7 +1,16 @@
 <!doctype html>
 <html lang = "it"> <!-- lingua -->
 	<head>
-		<style type = "text/css"> 
+		​<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+
+		<title>Esercizio 2</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<style> 
+			body
+			{
+				background-color: #caffae;
+			}
 			#titolo1 
 			{
 				font-size : 40px;
@@ -22,7 +31,7 @@
 				color: red;
 				background-color: yellow;
 				border: 1px;
-				width: 16%;
+				width: 26%;
 			}
 			#titolo2
 			{
@@ -44,9 +53,9 @@
 				color: #0a4000;
 				background-color: #0ca000;
 				border: 1px;
-				width: 16%;
+				width: 26%;
 			}
-			#tabella
+			table
 			{
 				width: 70%;
 				border: 2px solid black;
@@ -56,7 +65,7 @@
 			}
 			td, th 
 			{
-				border:3px solid black;
+				border:2px solid black;
 				padding:4px;
 			}
 			caption
@@ -89,12 +98,17 @@
 			{
 				background-color: red;
 			}
+			ul
+			{
+				width: 45%;
+			}
 			#totale
 			{
 				font-style: normal;
 				text-decoration: none;
 				font-weight: bold;
 				text-transform: uppercase;
+				border: 2px solid black;
 			}
 			#link
 			{
@@ -103,11 +117,15 @@
 			}
 		</style> 
 	</head>
-	<body bgcolor = "#caffae">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<body>
+		<div class="container">
 		<h1 id = "titolo1" > La mia vacanza </h1> <!-- titolo vacanza -->
 		<p id = "sottotitolo1" > Andalusia, estate 2019 </p> <!-- posto vacanza -->
 		<p style = "text-align: justify"> <!-- paragrafo vacanza -->
-			<img src = "Panoramic_Malaga.jpg", width = "40%", height = "275", align = "right", hspace = "120">
 			La scorsa estate ho fatto una vacanza di dieci giorni in Spagna, girando l'Andalusia. 
 			Siamo atterrati all'aeroporto di Malaga per poi andare a ritirare l'auto a noleggio, con cui 
 			abbiamo girato tutta la regione. Il fatto di dover percorrere così tanti chilometri 
@@ -122,28 +140,46 @@
 		<p>
 			Invece <u> alcune attività che ho svolto</u>, a differenza di come si fa in Italia sono state:
 		</p>
-		<ol type = "a"> <!-- attività svolte -->
-			<li> mangiare prosciutto tagliato col coltello </li>
-			<li> andare su piattaforme confiabili galleggianti </li>
-			<li> scoprire che gli spagnoli si accontentano di mangiare cibo scadente </li>
-		</ol>
+		<ul class="list-group"> <!-- attività svolte -->
+			<li class="list-group-item"> mangiare prosciutto tagliato col coltello </li>
+			<li class="list-group-item"> andare su piattaforme confiabili galleggianti </li>
+			<li class="list-group-item"> scoprire che gli spagnoli si accontentano di mangiare cibo scadente </li>
+		</ul> 
+		<div class="row">
+			<div class="col-12 col-lg-4">
+				<img src = "https://media-cdn.tripadvisor.com/media/photo-s/17/bc/7c/11/mirador-del-gibralfaro.jpg", width = "100%", height = "275"> 
+			</div>
+			<div class="col-12 col-lg-4">
+				<img src = "https://lh3.googleusercontent.com/proxy/8ARpdZH_FdrE09QiC5u5YMfD4FoHn5EKDxrYLhhVyR__2_avjx7uE-XUiP7NFF-76CmoZf_uVYcxOIJ4CHw8CvV6-6STRHHgqOIPaD5NzdeY79m7oJU", width = "100%", height = "275">
+			</div>
+			<div class="col-12 col-lg-4">
+				<img src = "https://vitaminaproject.com/wp-content/uploads/Granada-Panoramica.jpg", width = "100%", height = "275"> </div>
+		</div>
 		<br><br>
 		<h1 id = "titolo2" > Il mio hobby </h1> <!-- titolo hobby -->
 		<p id = "sottotitolo2" > Cicloturismo </p> <!-- attività hobby -->
 		<p style = "text-align: justify"> <!-- paragrafo hobby -->
-			<img src = "ciclabilemincio.jpg", width = "40%", height = "275",  align = "right", hspace = "120">
-			Mi piace molto andare a girare in bici, <u>mi rilassa</u> soprattutto stare in campagna o in posti lontani dalla città. Anche quando sono in vacanza ho bisogno di prendermi un po' di tempo per me e usare la mia bicicletta. Questa foto l'ho scattata durante il percorso ciclabile che porta <u>da Mantova a Peschiera del Garda</u>.
+			Mi piace molto andare a girare in bici, <u>mi rilassa</u> soprattutto stare in campagna o in posti lontani dalla città. Anche quando sono in vacanza ho bisogno di prendermi un po' di tempo per me e usare la mia bicicletta. Queste foto riguardano il percorso ciclabile che porta <u>da Mantova a Peschiera del Garda</u>.
 		</p>
+		<div class="row">
+			<div class="col-12 col-lg-4">
+				<img src = "https://www.bikeitalia.it/wp-content/uploads/2012/04/ciclabilemincio1.jpg", width = "100%", height="275">
+			</div>
+			<div class="col-12 col-lg-4">
+				<img src = "https://giteinlombardia.it/wp-content/uploads/2014/05/peschiera-mantova.jpg", width = "100%", height="275">
+			</div>
+			<div class="col-12 col-lg-4">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ponte_Visconteo_2.jpg/1200px-Ponte_Visconteo_2.jpg", width="100%", height="275">
+			</div>
+		</div>
 		<br><br>
 		<br><br>
 		<br><br>
 		<br><br>
 		<br><br>
-		<br><br>
-		<br><br>
-		<table id="tabella", align="center">
+		<table class="table table-striped", align="center">
 			<caption> <!-- titolo tabella -->
-				<p><b> Casi coronavirus Emilia-Romagna (13.03.20)</b></p>
+				<p align="center"><b> Casi coronavirus Italia (13.03.20)</b></p>
 			</caption>
 			<thead> <!-- titoli colonne -->
 				<tr> <th>Regione</th> <th> Casi</th> <th>Malati</th> <th>Guariti</th> <th>Deceduti</th> </tr>
@@ -182,5 +218,8 @@
 		</p>
 		<br><br>
 		<br><br>
+		</div>
 	</body>
 </html>
+
+
